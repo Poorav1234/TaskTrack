@@ -23,9 +23,13 @@ namespace MyApp.Namespace
         {
             if (HttpContext.Session.GetString("UserId") != null)
             {
-                List<t_task> tasks = await _taskService.GetTasksByUser(int.Parse(HttpContext.Session.GetString("UserId")));
+                int user_id = int.Parse(
+                    HttpContext.Session.GetString("UserId")
+                );
 
-                return View(tasks);
+                List<t_task> tasks = await _taskService.GetTasksByUser(user_id);
+
+                return View("List", tasks);
             }
             else
             {
@@ -154,6 +158,66 @@ namespace MyApp.Namespace
                 TempData["Message"] = "Error in deleting task";
             }
 
+            return RedirectToAction("List", "Task");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Details(int id)
+        {
+            if (HttpContext.Session.GetString("UserId") == null)
+            {
+                return RedirectToAction("Login", "Home");
+            }
+
+            t_task task = await _taskService.GetTask(id);
+
+            if (task == null)
+            {
+                TempData["Message"] = "Task not found";
+                return RedirectToAction("List", "Task");
+            }
+
+            return View(task);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Search(
+    string search = "",
+    string category = "",
+    string priority = "",
+    string status = "",
+    DateTime? due_date = null)
+        {
+            if (HttpContext.Session.GetString("UserId") == null)
+            {
+                return RedirectToAction("Login", "Home");
+            }
+
+            int user_id = int.Parse(
+                HttpContext.Session.GetString("UserId")
+            );
+
+            List<t_task> tasks = await _taskService.SearchTasks(
+                user_id,
+                search,
+                category,
+                priority,
+                status,
+                due_date
+            );
+
+            ViewBag.Search = search;
+            ViewBag.Category = category;
+            ViewBag.Priority = priority;
+            ViewBag.Status = status;
+            ViewBag.DueDate = due_date?.ToString("yyyy-MM-dd");
+
+            return View("List", tasks);
+        }
+
+        [HttpGet]
+        public IActionResult ClearSearch()
+        {
             return RedirectToAction("List", "Task");
         }
     }

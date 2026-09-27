@@ -1,0 +1,103 @@
+@{
+    ViewData["Title"] = "Edit Profile";
+    Layout = "../Shared/_TaskLayout.cshtml";
+}
+
+@using Repositories
+@using Repositories.Models
+
+@model vm_EditProfile
+
+<div class="container">
+
+    <h2>Edit Profile</h2>
+
+    <form asp-action="EditProfile"
+          asp-controller="User"
+          method="post">
+
+        <div class="mt-3">
+            <label>Username:</label>
+            <input type="text"
+                   class="form-control"
+                   asp-for="username">
+            <span class="text-danger"
+                  asp-validation-for="username"></span>
+        </div>
+
+        <div class="mt-3">
+            <label>Email:</label>
+            <input type="email"
+                   class="form-control"
+                   asp-for="email">
+            <span class="text-danger"
+                  asp-validation-for="email"></span>
+        </div>
+
+        <div class="mt-3">
+            <label>Mobile:</label>
+            <input type="text"
+                   class="form-control"
+                   asp-for="mobile">
+            <span class="text-danger"
+                  asp-validation-for="mobile"></span>
+        </div>
+
+        <div class="mt-3">
+            <label class="control-label">Gender:</label>
+
+            <div>
+                <input type="radio" asp-for="gender" value="Male" id="male">
+                <label for="male">Male</label>
+
+                <input type="radio" asp-for="gender" value="Female" id="female">
+                <label for="female">Female</label>
+
+                <input type="radio" asp-for="gender" value="Other" id="other">
+                <label for="other">Other</label>
+            </div>
+
+            <span class="text-danger" asp-validation-for="gender"></span>
+        </div>
+
+        <div class="mt-3">
+            <label>City:</label>
+            <select class="form-control" asp-for="city">
+                <option value="">-- Select City --</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Indore">Indore</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+                <option value="Rajkot">Rajkot</option>
+                <option value="Surat">Surat</option>
+                <option value="Vadodara">Vadodara</option>
+            </select>
+
+            <span class="text-danger"
+                  asp-validation-for="city"></span>
+        </div>
+
+        <div class="mt-3">
+            <button type="submit"
+                    class="btn btn-primary">
+                Update Profile
+            </button>
+        </div>
+
+        @if (TempData["Message"] != null)
+        {
+            <div class="alert alert-success mt-3">
+                @TempData["Message"]
+            </div>
+        }
+
+    </form>
+
+</div>

@@ -101,3 +101,4 @@ D:\Task Tracker\MVC\obj\Debug\net10.0\refint\MVC.dll
 D:\Task Tracker\MVC\obj\Debug\net10.0\MVC.pdb
 D:\Task Tracker\MVC\obj\Debug\net10.0\MVC.genruntimeconfig.cache
 D:\Task Tracker\MVC\obj\Debug\net10.0\ref\MVC.dll
+D:\Task Tracker\MVC\obj\Debug\net10.0\MVC.sourcelink.json

@@ -1,0 +1,55 @@
+@{
+    ViewData["Title"] = "Task Details";
+    Layout = "../Shared/_TaskLayout.cshtml";
+}
+
+@using Repositories
+@using Repositories.Models
+
+@model t_task
+
+<div class="container">
+
+    <h2>Task Details</h2>
+
+    <div class="mt-4">
+
+        <div class="mb-3">
+            <label><strong>Task ID:</strong></label>
+            <p>@Model.task_id</p>
+        </div>
+
+        <div class="mb-3">
+            <label><strong>Task Name:</strong></label>
+            <p>@Model.task_name</p>
+        </div>
+
+        <div class="mb-3">
+            <label><strong>Category:</strong></label>
+            <p>@Model.category</p>
+        </div>
+
+        <div class="mb-3">
+            <label><strong>Priority:</strong></label>
+            <p>@Model.priority</p>
+        </div>
+
+        <div class="mb-3">
+            <label><strong>Due Date:</strong></label>
+            <p>@Model.due_date.ToString("dd-MM-yyyy")</p>
+        </div>
+
+        <div class="mb-3">
+            <label><strong>Status:</strong></label>
+            <p>@Model.status</p>
+        </div>
+
+        <a asp-controller="Task"
+           asp-action="List"
+           class="btn btn-secondary">
+            Back
+        </a>
+
+    </div>
+
+</div>
