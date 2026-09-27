@@ -1,0 +1,12 @@
+D:\Task Tracker\Repositories\bin\Debug\net10.0\Repositories.deps.json
+D:\Task Tracker\Repositories\bin\Debug\net10.0\Repositories.dll
+D:\Task Tracker\Repositories\bin\Debug\net10.0\Repositories.pdb
+D:\Task Tracker\Repositories\obj\Debug\net10.0\Repositories.csproj.AssemblyReference.cache
+D:\Task Tracker\Repositories\obj\Debug\net10.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\Task Tracker\Repositories\obj\Debug\net10.0\Repositories.AssemblyInfoInputs.cache
+D:\Task Tracker\Repositories\obj\Debug\net10.0\Repositories.AssemblyInfo.cs
+D:\Task Tracker\Repositories\obj\Debug\net10.0\Repositories.csproj.CoreCompileInputs.cache
+D:\Task Tracker\Repositories\obj\Debug\net10.0\Repositories.dll
+D:\Task Tracker\Repositories\obj\Debug\net10.0\refint\Repositories.dll
+D:\Task Tracker\Repositories\obj\Debug\net10.0\Repositories.pdb
+D:\Task Tracker\Repositories\obj\Debug\net10.0\ref\Repositories.dll

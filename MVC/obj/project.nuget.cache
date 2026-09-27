@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qklgoeQ+/PM=",
+  "success": true,
+  "projectFilePath": "D:\\Task Tracker\\MVC\\MVC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Poorav\\.nuget\\packages\\npgsql\\10.0.3\\npgsql.10.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
