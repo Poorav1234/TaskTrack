@@ -1,0 +1,118 @@
+@{
+    ViewData["Title"] = "Admin Dashboard";
+    Layout = "../Shared/_AdminLayout.cshtml";
+}
+
+@using Repositories.Models
+
+@model vm_AdminDashboard
+
+<div class="container">
+
+    <h2>Admin Dashboard</h2>
+
+    <div class="row mt-4">
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Total Users
+                    </h5>
+
+                    <h2>
+                        @Model.TotalUsers
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Total Tasks
+                    </h5>
+
+                    <h2>
+                        @Model.TotalTasks
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Completed Tasks
+                    </h5>
+
+                    <h2>
+                        @Model.CompletedTasks
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Pending Tasks
+                    </h5>
+
+                    <h2>
+                        @Model.PendingTasks
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        In Progress Tasks
+                    </h5>
+
+                    <h2>
+                        @Model.InProgressTasks
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

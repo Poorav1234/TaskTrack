@@ -1,6 +1,5 @@
 using Npgsql;
 using Repositories;
-using Repositories.Implementations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +18,7 @@ builder.Services.AddScoped<NpgsqlConnection>(service =>
 
 builder.Services.AddScoped<IUserInterface, UserRepository>();
 builder.Services.AddScoped<ITaskInterface, TaskRepository>();
+builder.Services.AddScoped<IAdminInterface, AdminRepository>();
 
 var app = builder.Build();
 

@@ -88,8 +88,6 @@ D:\Task Tracker\MVC\obj\Debug\net10.0\compressed\0h7j2fdqmy-{0}-2z0ns9nrw6-2z0ns
 D:\Task Tracker\MVC\obj\Debug\net10.0\compressed\ebvhgcjn2z-{0}-muycvpuwrr-muycvpuwrr.gz
 D:\Task Tracker\MVC\obj\Debug\net10.0\compressed\7cuj28171i-{0}-87fc7y1x7t-87fc7y1x7t.gz
 D:\Task Tracker\MVC\obj\Debug\net10.0\compressed\q47woek80r-{0}-mlv21k5csn-mlv21k5csn.gz
-D:\Task Tracker\MVC\obj\Debug\net10.0\compressed\intxlqd4cf-{0}-4oucrvbtfc-4oucrvbtfc.gz
-D:\Task Tracker\MVC\obj\Debug\net10.0\compressed\3gf5a57a6h-{0}-4oucrvbtfc-4oucrvbtfc.gz
 D:\Task Tracker\MVC\obj\Debug\net10.0\staticwebassets.build.json
 D:\Task Tracker\MVC\obj\Debug\net10.0\staticwebassets.build.json.cache
 D:\Task Tracker\MVC\obj\Debug\net10.0\staticwebassets.development.json
@@ -102,3 +100,6 @@ D:\Task Tracker\MVC\obj\Debug\net10.0\MVC.pdb
 D:\Task Tracker\MVC\obj\Debug\net10.0\MVC.genruntimeconfig.cache
 D:\Task Tracker\MVC\obj\Debug\net10.0\ref\MVC.dll
 D:\Task Tracker\MVC\obj\Debug\net10.0\MVC.sourcelink.json
+D:\Task Tracker\MVC\obj\Debug\net10.0\scopedcss\Views\Shared\_AdminLayout.cshtml.rz.scp.css
+D:\Task Tracker\MVC\obj\Debug\net10.0\compressed\intxlqd4cf-{0}-pcs5obsq9r-pcs5obsq9r.gz
+D:\Task Tracker\MVC\obj\Debug\net10.0\compressed\3gf5a57a6h-{0}-pcs5obsq9r-pcs5obsq9r.gz

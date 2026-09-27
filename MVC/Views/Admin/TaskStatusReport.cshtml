@@ -1,0 +1,39 @@
+@{
+    ViewData["Title"] = "Task Status Report";
+    Layout = "../Shared/_AdminLayout.cshtml";
+}
+
+@using Repositories.Models
+
+@model IEnumerable<vm_TaskStatusReport>
+
+<div class="container">
+
+    <h2>Task Status Report</h2>
+
+    <p class="mt-3">
+        Display the number of tasks according to their current status.
+    </p>
+
+    <table class="table table-striped mt-4">
+
+        <thead class="thead-dark">
+            <tr>
+                <th>Status</th>
+                <th>Number of Tasks</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.status</td>
+                    <td>@item.total_tasks</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+</div>
