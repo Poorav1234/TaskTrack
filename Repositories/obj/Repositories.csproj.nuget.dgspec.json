@@ -1,4 +1,4 @@
-{
+git remote add origin{
   "format": 1,
   "restore": {
     "D:\\Task Tracker\\Repositories\\Repositories.csproj": {}

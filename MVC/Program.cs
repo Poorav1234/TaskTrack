@@ -1,3 +1,4 @@
+using MVC.Middleware;
 using Npgsql;
 using Repositories;
 
@@ -27,6 +28,8 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
+
+app.UseMiddleware<RequestLoggingMiddleware>();
 
 app.UseHttpsRedirection();
 

@@ -7,7 +7,7 @@ public class t_admin
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int admin_id { get; set; }
+    public int user_id { get; set; }
 
     [StringLength(100)]
     [Required(ErrorMessage = "Email is required")]
